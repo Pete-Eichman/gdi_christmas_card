@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy Holidays!</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://s3.amazonaws.com/codecademy-content/courses/holiday-cards/snowfall.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        snowFall.snow($("body"), {
+          minSize: 1,
+          maxSize: 8,
+          round: true,
+          minSpeed: 1,
+          maxSpeed: 5,
+          flakeCount: 1000,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Merry Chrimbus</h1>
+    <h2>From: Pep</h2>
+    <img src="https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-9xjis/images/santa.png">
+    <img src="https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-9xjis/images/snowman.png">
+  </body>
+</html>
